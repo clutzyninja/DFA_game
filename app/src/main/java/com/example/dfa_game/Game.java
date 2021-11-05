@@ -23,7 +23,8 @@ public class Game extends AppCompatActivity {
     ImageView stateImage; // hold image
     ImageView arrowImage;
     String msg;
-    private android.widget.RelativeLayout.LayoutParams layoutParams;
+    private android.widget.RelativeLayout.LayoutParams layoutParams1;
+    private android.widget.RelativeLayout.LayoutParams layoutParams2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +57,7 @@ public class Game extends AppCompatActivity {
             public boolean onDrag(View s, DragEvent event) {
                 switch(event.getAction()) {
                     case DragEvent.ACTION_DRAG_STARTED:
-                        layoutParams = (RelativeLayout.LayoutParams)s.getLayoutParams();
+                        layoutParams1 = (RelativeLayout.LayoutParams)s.getLayoutParams();
                         Log.d(msg, "Action is DragEvent.ACTION_DRAG_STARTED");
 
                         // Do nothing
@@ -72,9 +73,9 @@ public class Game extends AppCompatActivity {
                         Log.d(msg, "Action is DragEvent.ACTION_DRAG_EXITED");
                         x_cord = (int) event.getX();
                         y_cord = (int) event.getY();
-                        layoutParams.leftMargin = x_cord;
-                        layoutParams.topMargin = y_cord;
-                        s.setLayoutParams(layoutParams);
+                        layoutParams1.leftMargin = x_cord;
+                        layoutParams1.topMargin = y_cord;
+                        s.setLayoutParams(layoutParams1);
                         break;
 
                     case DragEvent.ACTION_DRAG_LOCATION  :
@@ -85,6 +86,7 @@ public class Game extends AppCompatActivity {
 
                     case DragEvent.ACTION_DRAG_ENDED   :
                         Log.d(msg, "Action is DragEvent.ACTION_DRAG_ENDED");
+
                         s.setX(event.getX());
                         s.setY(event.getY());
                         // Do nothing
@@ -92,8 +94,8 @@ public class Game extends AppCompatActivity {
 
                     case DragEvent.ACTION_DROP:
                         Log.d(msg, "ACTION_DROP event");
-                        s.setX(event.getX());
-                        s.setY(event.getY());
+                        //s.setX(event.getX());
+                        //s.setY(event.getY());
                         // Do nothing
                         break;
                     default: break;
@@ -116,7 +118,9 @@ public class Game extends AppCompatActivity {
                     return false;
                 }
             }
-        }); // end code for moving state
+        });
+        // end code for moving state
+
 
         // *******Code for moving arrow
 
@@ -142,7 +146,7 @@ public class Game extends AppCompatActivity {
             public boolean onDrag(View a, DragEvent event) {
                 switch(event.getAction()) {
                     case DragEvent.ACTION_DRAG_STARTED:
-                        layoutParams = (RelativeLayout.LayoutParams)a.getLayoutParams();
+                        layoutParams2 = (RelativeLayout.LayoutParams)a.getLayoutParams();
                         Log.d(msg, "Action is DragEvent.ACTION_DRAG_STARTED");
 
                         // Do nothing
@@ -158,9 +162,9 @@ public class Game extends AppCompatActivity {
                         Log.d(msg, "Action is DragEvent.ACTION_DRAG_EXITED");
                         x_cord = (int) event.getX();
                         y_cord = (int) event.getY();
-                        layoutParams.leftMargin = x_cord;
-                        layoutParams.topMargin = y_cord;
-                        a.setLayoutParams(layoutParams);
+                        layoutParams2.leftMargin = x_cord;
+                        layoutParams2.topMargin = y_cord;
+                        a.setLayoutParams(layoutParams2);
                         break;
 
                     case DragEvent.ACTION_DRAG_LOCATION  :
