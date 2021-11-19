@@ -8,8 +8,6 @@ public class DFA {
 
     static class State {
         int id;         // 'name' of State
-        int locx;       // location on gameboard
-        int locy;
         boolean isStart;    // is the Start State
         boolean isAccept;   // is an accept state
         boolean isLoop;     // points to itself //TODO : probably uneccessary
