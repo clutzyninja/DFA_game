@@ -30,7 +30,7 @@ public class Game extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         //************ DON'T TOUCH ******
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game);
+        setContentView(R.layout.activity_question);
         //**************
 
         // ************ HOPEFULLY CODE TO MOVE STATE
