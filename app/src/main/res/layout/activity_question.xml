@@ -7,26 +7,26 @@
     tools:context="com.masrik.dfa.Game">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/option3"
         android:layout_width="361dp"
         android:layout_height="48dp"
-        android:text="TextView"
+        android:text="Option 3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/option2"
         app:layout_constraintVertical_bias="0.153"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/option2"
         android:layout_width="361dp"
         android:layout_height="48dp"
-        android:text="TextView"
+        android:text="Option 2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/option1"
         app:layout_constraintVertical_bias="0.096"
         tools:ignore="MissingConstraints" />
 
@@ -65,18 +65,18 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/option1"
         android:layout_width="361dp"
         android:layout_height="48dp"
-        android:text="TextView"
+        android:text="Option 1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/question"
         app:layout_constraintVertical_bias="0.157" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/question"
         android:layout_width="361dp"
         android:layout_height="48dp"
         android:text="Which is the corresponding Regex"
