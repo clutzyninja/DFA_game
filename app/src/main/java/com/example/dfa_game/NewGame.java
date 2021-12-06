@@ -16,14 +16,19 @@ public class NewGame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question1);
 
-        Intent i = new Intent(NewGame.this,Correct.class);
-        startActivity(i);
-
     } // end onCreate
 
-    public void question1 (View v) {
+    public void questionCorrect (View v) {
         Intent i = new Intent(this,Correct.class);
         startActivity(i);
+    }
+    public void questionIncorrect (View v) {
+        Intent i = new Intent(this,Incorrect.class);
+        startActivity(i);
+    }
+
+    public void question2 (View v) {
+        setContentView(R.layout.activity_question2);
     }
 
 } // end NewGame

@@ -1,6 +1,8 @@
 package com.example.dfa_game;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,13 +16,14 @@ public class Incorrect extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.incorrect);
 
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        finish();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                finish();
+            }
+        }, 2000);
 
-    }
+    } // end onCreate
 
 }
