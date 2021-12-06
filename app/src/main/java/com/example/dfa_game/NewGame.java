@@ -8,8 +8,6 @@ import android.widget.Button;
 import androidx.annotation.ContentView;
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
-
 public class NewGame extends AppCompatActivity {
 
     @Override
@@ -18,14 +16,14 @@ public class NewGame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question1);
 
+        Intent i = new Intent(NewGame.this,Correct.class);
+        startActivity(i);
 
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(NewGame.this,Correct.class);
-                startActivity(i);
-            }
-        });
+    } // end onCreate
 
+    public void question1 (View v) {
+        Intent i = new Intent(this,Correct.class);
+        startActivity(i);
     }
 
 } // end NewGame

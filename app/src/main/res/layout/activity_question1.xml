@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:onClick="question1">
 
     <TextView
         android:id="@+id/textView12"
@@ -45,6 +46,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="142dp"
         android:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="question1"
         android:text="A)" />
 
     <Button
@@ -55,8 +57,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="32dp"
         android:layout_marginTop="202dp"
-        android:text="B)"
-        android:backgroundTint="@android:color/holo_blue_dark"/>
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="B)" />
 
     <Button
         android:id="@+id/button7"
@@ -66,8 +68,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="32dp"
         android:layout_marginTop="262dp"
-        android:text="C)"
-        android:backgroundTint="@android:color/holo_blue_dark"/>
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="C)" />
 
     <Button
         android:id="@+id/button8"
@@ -77,8 +79,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="32dp"
         android:layout_marginTop="322dp"
-        android:text="D)"
-        android:backgroundTint="@android:color/holo_blue_dark"/>
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="D)" />
 
     <TextView
         android:id="@+id/textView9"

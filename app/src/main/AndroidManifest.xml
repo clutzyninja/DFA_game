@@ -13,8 +13,12 @@
         <activity
             android:name=".NewGame"
             android:exported="false" />
-        <activity android:name=".Correct"/>
-        <activity android:name=".Incorrect"/>
+        <activity android:name=".Correct"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Incorrect"
+            android:exported="true"
+            android:screenOrientation="landscape"/>
 
         <activity
             android:name=".MainActivity"

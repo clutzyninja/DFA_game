@@ -29,17 +29,3 @@ public class MainActivity extends AppCompatActivity {
 
 }
 
-    /*
-    public void example(View v) {
-        Button b = (Button) v;
-
-        findViewById(R.id.start).setEnabled(false);                         // affect button
-        ((Button)findViewById(R.id.start)).setText("new new disabled");
-
-        EditText t = findViewById(R.id.source);                 // input and output text
-        String input = t.getText().toString();
-        ((TextView)findViewById(R.id.output)).setText(input);
-
-        Toast.makeText(this, "Alert", Toast.LENGTH_LONG).show();    // dsiplay alert
-    }
-    */

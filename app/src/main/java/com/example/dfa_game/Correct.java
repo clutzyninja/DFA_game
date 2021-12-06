@@ -17,7 +17,7 @@ public class Correct extends AppCompatActivity {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        finish();
+        //finish();
 
     }
 
