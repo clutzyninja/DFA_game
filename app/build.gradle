@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 3
 
     defaultConfig {
         applicationId "com.example.dfa_game"
