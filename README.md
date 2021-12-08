@@ -1,4 +1,3 @@
 # DFA_game
 
-This is read me!
-This is a DFA game
+[![Android CI](https://github.com/clutzyninja/DFA_game/actions/workflows/android.yml/badge.svg)](https://github.com/clutzyninja/DFA_game/actions/workflows/android.yml)
