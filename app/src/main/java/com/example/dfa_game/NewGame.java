@@ -10,11 +10,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class NewGame extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question1);
+        String[][] database = new String[50][4];
+        database[0][0] = "@drawable/even0s";
+
 
     } // end onCreate
 
