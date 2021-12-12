@@ -44,13 +44,7 @@ public class NewGame extends AppCompatActivity {
     public void questionCorrect (View v) {
         Intent i = new Intent(this,Correct.class);
         startActivity(i);
-
-        if (count >= 2) {
-            next.setVisibility(View.INVISIBLE);
-        } else {
-            next.callOnClick();
-        }
-
+        next.callOnClick();
 
     }
 
