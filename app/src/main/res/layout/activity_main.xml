@@ -8,20 +8,55 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/regex2nfa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#C11313"
+        android:onClick="launchSettings"
+        android:text="Regex ➡ NFA ➡ DFA"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regex2nfa"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <Button
         android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
         android:backgroundTint="#C11313"
         android:onClick="launchSettings"
-        android:text="START"
+        android:text="Quiz"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929" />
+
+    <Button
+        android:id="@+id/regex2nfa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#C11313"
+        android:onClick="launchSettings"
+        android:text="Regex ➡ NFA"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -29,8 +64,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/start"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124"
         app:srcCompat="@drawable/gamelogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
