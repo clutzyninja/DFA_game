@@ -17,7 +17,7 @@ public class Cfg2ll extends AppCompatActivity {
 
         mywebView=(WebView) findViewById(R.id.webview);
         mywebView.setWebViewClient(new WebViewClient());
-        mywebView.loadUrl("https://www.masrikdahir.com/dfa/regex2nfa.html");
+        mywebView.loadUrl("https://www.masrikdahir.com/dfa/cfg2ll.html");
         WebSettings webSettings=mywebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 

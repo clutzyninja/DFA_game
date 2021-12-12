@@ -17,7 +17,7 @@ public class Nfa2dfa extends AppCompatActivity {
 
         mywebView=(WebView) findViewById(R.id.webview);
         mywebView.setWebViewClient(new WebViewClient());
-        mywebView.loadUrl("https://www.masrikdahir.com/dfa/regex2nfa.html");
+        mywebView.loadUrl("https://www.masrikdahir.com/dfa/nfa2dfa.html");
         WebSettings webSettings=mywebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 

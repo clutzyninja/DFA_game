@@ -14,6 +14,14 @@
 
         <activity android:name=".Regex2nfa"
             android:exported="false"/>
+        <activity android:name=".Nfa2dfa"
+            android:exported="false"/>
+        <activity android:name=".Min_dfa"
+            android:exported="false"/>
+        <activity android:name=".Cfg2ll"
+            android:exported="false"/>
+        <activity android:name=".Cfg2cnf"
+            android:exported="false"/>
 
         <activity
             android:name=".NewGame"
