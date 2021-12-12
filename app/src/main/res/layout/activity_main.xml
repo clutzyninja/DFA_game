@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/regex2nfa2"
+        android:id="@+id/nfa2dfa"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:backgroundTint="#C11313"
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regex2nfa2"
+        app:layout_constraintTop_toBottomOf="@+id/nfa2dfa"
         app:layout_constraintVertical_bias="0.069" />
 
     <Button
@@ -46,7 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regex2nfa2"
+        app:layout_constraintTop_toBottomOf="@+id/nfa2dfa"
         app:layout_constraintVertical_bias="0.069" />
 
     <Button
@@ -60,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regex2nfa2"
+        app:layout_constraintTop_toBottomOf="@+id/nfa2dfa"
         app:layout_constraintVertical_bias="0.284" />
 
     <Button
