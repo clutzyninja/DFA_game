@@ -13,6 +13,7 @@ name: "CodeQL"
 
 on:
   push:
+masrik_dahir
     branches: [ masrik_dahir ]
   pull_request:
     # The branches below must be a subset of the branches above
