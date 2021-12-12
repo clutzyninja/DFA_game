@@ -16,7 +16,7 @@
         <activity android:name=".Correct"
             android:exported="false" />
         <activity android:name=".Incorrect"
-            android:exported="true"/>
+            android:exported="false"/>
 
         <activity
             android:name=".MainActivity"
