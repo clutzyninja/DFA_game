@@ -8,20 +8,94 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/nfa2dfa"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#C11313"
+        android:text="Regex ➡ NFA ➡ DFA"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regex2nfa"
+        app:layout_constraintVertical_bias="0.057" />
+
+
+
+    <Button
+        android:id="@+id/min_dfa"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#C11313"
+        android:text="Regex ➡ NFA ➡ DFA ➡ Min-DFA"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nfa2dfa"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <Button
+        android:id="@+id/cfg2ll"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#C11313"
+        android:text="CFG ➡ LL(k)"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nfa2dfa"
+        app:layout_constraintVertical_bias="0.284" />
+
+    <Button
+        android:id="@+id/cfg2cnf"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="172dp"
+        android:backgroundTint="#C11313"
+        android:text="CFG ➡ CNF"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cfg2ll"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <Button
         android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="40dp"
         android:backgroundTint="#C11313"
-        android:onClick="launchSettings"
-        android:text="START"
+        android:text="Quiz"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cfg2cnf"
+        app:layout_constraintVertical_bias="0.821" />
+
+    <Button
+        android:id="@+id/regex2nfa"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#C11313"
+        android:text="Regex ➡ NFA"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.311" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -29,8 +103,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/start"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124"
         app:srcCompat="@drawable/gamelogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
