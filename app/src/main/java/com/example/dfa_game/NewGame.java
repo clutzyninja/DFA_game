@@ -11,10 +11,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class NewGame extends AppCompatActivity {
     ImageView question;
-    Button next, b_1, b_2, b_3, b_4;
-    TextView option1, option2, option3, option4, que;
+    Button next, b_1, b_2, b_3, b_4, button2;
+    TextView option1, option2, option3, option4, que, scoree;
     int count = 0;
     Data data = new Data();
+    int sco = 0;
 
 
     @Override
@@ -25,11 +26,13 @@ public class NewGame extends AppCompatActivity {
         question = findViewById(R.id.imageView2);
         que = findViewById(R.id.que);
         next = findViewById(R.id.button);
+        button2 = findViewById(R.id.button2);
 
         option1 = findViewById(R.id.textView12);
         option2 = findViewById(R.id.textView11);
         option3 = findViewById(R.id.textView9);
         option4 = findViewById(R.id.textView10);
+        scoree = findViewById(R.id.scoree);
 
         b_1 = findViewById(R.id.button5);
         b_2 = findViewById(R.id.button6);
@@ -41,21 +44,32 @@ public class NewGame extends AppCompatActivity {
     } // end onCreate
 
 
+    @SuppressLint("SetTextI18n")
     public void questionCorrect (View v) {
         Intent i = new Intent(this,Correct.class);
         startActivity(i);
+        sco++;
+        sco = Math.min(sco, make_question(count));
+        scoree.setText("Score: "+sco);
         next.callOnClick();
-
     }
 
 
+    @SuppressLint("SetTextI18n")
     public void questionIncorrect (View v) {
         Intent i = new Intent(this,Incorrect.class);
         startActivity(i);
+        sco--;
+        sco = Math.min(sco, make_question(count));
+        scoree.setText("Score: "+sco);
     }
 
     public void engine (View v) {
         count += 1;
+        make_question(data.database, count);
+    }
+    public void back_engine (View v) {
+        count -= 1;
         make_question(data.database, count);
     }
 
@@ -72,13 +86,22 @@ public class NewGame extends AppCompatActivity {
             option3.setText((database[count][3].toString()));
             option4.setText((database[count][4].toString()));
             que.setText("Question: " + make_question(count));
-            b_1.setOnClickListener(b_1.getText().toString().equals(data.database[count][5].toString()) ? this::questionCorrect : this::questionIncorrect);
-            b_2.setOnClickListener(b_2.getText().toString().equals(data.database[count][5].toString()) ? this::questionCorrect : this::questionIncorrect);
-            b_3.setOnClickListener(b_3.getText().toString().equals(data.database[count][5].toString()) ? this::questionCorrect : this::questionIncorrect);
-            b_4.setOnClickListener(b_4.getText().toString().equals(data.database[count][5].toString()) ? this::questionCorrect : this::questionIncorrect);
+            b_1.setOnClickListener(b_1.getText().toString().equals(data.database[count][5].toString()) ?
+                    this::questionCorrect : this::questionIncorrect);
+            b_2.setOnClickListener(b_2.getText().toString().equals(data.database[count][5].toString()) ?
+                    this::questionCorrect : this::questionIncorrect);
+            b_3.setOnClickListener(b_3.getText().toString().equals(data.database[count][5].toString()) ?
+                    this::questionCorrect : this::questionIncorrect);
+            b_4.setOnClickListener(b_4.getText().toString().equals(data.database[count][5].toString()) ?
+                    this::questionCorrect : this::questionIncorrect);
             next.setOnClickListener(this::engine);
+            button2.setOnClickListener(this::back_engine);
+
+            button2.setVisibility(View.VISIBLE);
+            next.setVisibility(View.VISIBLE);
+
         }catch(Exception e){
-            next.setVisibility(View.INVISIBLE);
+
         }
     }
 
