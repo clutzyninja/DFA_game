@@ -9,6 +9,8 @@
         <entry key="..\:/Coding Stuff/Android/DFA_game/app/src/main/res/drawable/state.xml" value="0.3828125" />
         <entry key="..\:/Coding Stuff/Android/DFA_game/app/src/main/res/layout/activity_game.xml" value="0.36666666666666664" />
         <entry key="..\:/Coding Stuff/Android/DFA_game/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/malco/StudioProjects/DFA_game/app/src/main/res/drawable/state.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/malco/StudioProjects/DFA_game/app/src/main/res/drawable/transition.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/malco/StudioProjects/DFA_game/app/src/main/res/layout-land/activity_main.xml" value="0.30687830687830686" />
         <entry key="..\:/Users/malco/StudioProjects/DFA_game/app/src/main/res/layout/activity_game.xml" value="0.2753623188405797" />
         <entry key="..\:/Users/malco/StudioProjects/DFA_game/app/src/main/res/layout/activity_main.xml" value="0.2753623188405797" />
@@ -19,6 +21,7 @@
         <entry key="..\:/Users/malco/StudioProjects/DFA_game/app/src/main/res/layout/correct.xml" value="0.2753623188405797" />
         <entry key="..\:/Users/malco/StudioProjects/DFA_game/app/src/main/res/layout/incorrect.xml" value="0.2753623188405797" />
         <entry key="..\:/Users/malco/StudioProjects/DFA_game/app/src/main/res/layout/settings.xml" value="0.2753623188405797" />
+        <entry key="..\:/Users/malco/StudioProjects/DFA_game/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.37864583333333335" />
         <entry key="app/src/main/res/layout/activity_game.xml" value="0.15070921985815602" />
       </map>
     </option>
@@ -28,5 +31,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2753623188405797" />
+      </ProjectState>
+    </option>
   </component>
 </project>

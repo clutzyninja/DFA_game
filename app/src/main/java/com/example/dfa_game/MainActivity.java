@@ -13,7 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button start, regex2nfa, nfa2dfa, min_dfa, cfg2ll, cfg2cnf;
+    Button start, regex2nfa, nfa2dfa, min_dfa, cfg2ll, cfg2cnf, settings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         min_dfa = findViewById(R.id.min_dfa);
         cfg2ll = findViewById(R.id.cfg2ll);
         cfg2cnf = findViewById(R.id.cfg2cnf);
+        settings = findViewById(R.id.settings);
 
         start.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -61,6 +62,14 @@ public class MainActivity extends AppCompatActivity {
         cfg2ll.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), Cfg2ll.class);
+                startActivityForResult(myIntent, 0);
+            }
+
+        });
+
+        settings.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(view.getContext(), Settings.class);
                 startActivityForResult(myIntent, 0);
             }
 
