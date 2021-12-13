@@ -24,23 +24,23 @@
         android:layout_marginTop="223dp">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/Easy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Easy" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="RadioButton" />
+            android:text="Medium" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/Hard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Hard" />
     </RadioGroup>
 
     <EditText
