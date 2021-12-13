@@ -67,17 +67,18 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        settings.setOnClickListener(new View.OnClickListener() {
+        cfg2cnf.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), Settings.class);
+                Intent myIntent = new Intent(view.getContext(), Cfg2cnf.class);
                 startActivityForResult(myIntent, 0);
             }
 
         });
 
-        cfg2cnf.setOnClickListener(new View.OnClickListener() {
+
+        settings.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), Cfg2cnf.class);
+                Intent myIntent = new Intent(view.getContext(), Settings.class);
                 startActivityForResult(myIntent, 0);
             }
 
