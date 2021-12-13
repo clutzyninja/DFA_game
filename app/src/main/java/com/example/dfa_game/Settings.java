@@ -16,7 +16,7 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
 
-        Handler handler = new Handler();
+        //Handler handler = new Handler();
 
 
     } // end onCreate
