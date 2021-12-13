@@ -22,6 +22,8 @@
             android:exported="false"/>
         <activity android:name=".Cfg2cnf"
             android:exported="false"/>
+        <activity android:name=".Settings"
+            android:exported="false"/>
 
         <activity
             android:name=".NewGame"
